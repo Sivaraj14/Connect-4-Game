@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect 4 Enhanced</title>
+    <link rel="stylesheet" href="css_4p.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Connect 4</h1>
+
+        <div class="controls">
+            <label>
+                Player 1 Name: 
+                <input type="text" id="playerRedName" placeholder="Red Player" />
+            </label>
+            <label>
+                Player 2 Name:
+                <input type="text" id="playerYellowName" placeholder="Yellow Player" />
+            </label>
+            <button id="resetBtn">Reset Game</button>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
+
+        <h2 id="status"><span id="player-indicator">Red</span>'s turn</h2>
+        <h2 id="winner"></h2>
+
+        <div id="board"></div>
+    </div>
+
+    <audio id="dropSound" src="drop.wav" preload="auto"></audio>
+    <audio id="winSound" src="win.wav" preload="auto"></audio>
+
+    <script src="js_4p.js"></script>
+</body>
+</html>
